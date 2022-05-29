@@ -1,0 +1,22 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+    color: #f00;
+    font-family: Inconsolata, monospace, sans-serif;
+}
+
+#time {
+    font-size: 40vh;
+    text-align: center;
+
+    transform: translateY(25vh);
+}
