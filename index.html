@@ -3,15 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Clock</title>
-    <link rel="stylesheet" href="simpleclock.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui-css@2.8.8/semantic.min.css" integrity="sha256-ckBg2pN9ZF9KPn+vY00JXAkdqE1nv20iGM2haZhCBl4=" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="simpleclock.css">
 </head>
 <body>
     <div id="time"></div>
 
+    <a id="btn-settings" class="ui black icon button"><i class="icon cog"></i></a>
+
+    <div id="modal-settings" class="ui modal">
+        <div class="header">Settings</div>
+        <div class="content">
+            <div class="description">
+                <div class="ui grid">
+                    <div class="ui six wide column">
+                        <p>Text</p>
+                        <div data-element="text" class="picker" acp-color="#FF0000"></div>
+                    </div>
+                    <div class="ui six wide column">
+                        <p>Background</p>
+                        <div data-element="background" class="picker" acp-color="#000000"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="actions">
+            <div class="ui cancel button">Close</div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/a-color-picker@1.2.1/dist/acolorpicker.js" integrity="sha256-wCn5HuCY4QlpTXgIjoSM8BTmWvu/OwelSARgU6mURPU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui-css@2.8.8/semantic.min.js" integrity="sha256-VxL9ZXOItJ0i4nJLm39HIoX8u3cCRPRkDjMSXZ/RiQQ=" crossorigin="anonymous"></script>
     <script src="simpleclock.js"></script>
 </body>
 </html>
