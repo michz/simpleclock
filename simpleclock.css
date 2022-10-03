@@ -23,14 +23,17 @@ body {
     transform: translateY(25vh);
 }
 
-#btn-settings {
+#bottom-buttons {
     position: absolute;
     right: 1rem;
     bottom: 1rem;
+}
+
+#bottom-buttons .button {
     opacity: 0.2;
     transition: opacity 0.5s ease-out;
 }
-#btn-settings:hover {
+#bottom-buttons .button:hover {
     opacity: 1;
     transition: opacity 0.1s linear;
 }
